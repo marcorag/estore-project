@@ -53,9 +53,11 @@ export default class SignIn extends React.Component{
                     required 
                     handleChange ={this.handleChange}
                     />
+                    <div className='buttons'>
 
                     <CustomButton type='submit'> Sign In</CustomButton>
-                    <CustomButton onClick ={signWithGoogle}> Sign In With Google</CustomButton>
+                    <CustomButton onClick ={signWithGoogle} isGoogleSignIn> Sign In With Google</CustomButton>
+                    </div>
                 </form>
             </div>
         )
